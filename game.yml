@@ -1,0 +1,9 @@
+prompt:
+  text: 'what do you say, you get money, I get drugs'
+  choices:
+    -yes:
+      text: 'yes'
+      result: 'Hell yeah'
+    -no:
+      text: 'no'
+      result: 'someone like you, more like someone unlike you'
