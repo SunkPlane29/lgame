@@ -1,39 +1,39 @@
 prompt:
-  text: 'what do you say, you get money, I get drugs'
+  text: 'bah cpx, hoje tamo meio atoa, bot uma pet no garra e não se acanhe'
   image: 'image-1.jpg'
   choices:
     - yes:
       id: 1
-      text: 'YES'
-      result: 'Hell yeah'
+      text: 'SIM'
+      result: 'é sobre isso'
       next:
-        text: 'so how much 100 of these will get me'
+        text: 'quantos roche vamo meter hoje?'
         choices:
           - 100:
             id: 1
             text: '100'
-            result: 'no deal, I value my money'
+            result: 'mas ta meio pouco né'
           - 420:
             id: 2
             text: '420'
-            result: 'now thats what im talking about'
+            result: 'parece razoável né, tem 5 então 1/84 (não sou muito bom de matemática)'
           - 00:
             id: 3
             text: '00'
-            result: 'noooo'
+            result: 'se eu dividir 5/00 meu neuronio cpx queima'
           - 99999:
             id: 4
             text: '99999'
-            result: 'economy: breaks'
+            result: 'é sobre isso'
           - 3210931:
             id: 5
             text: '391091'
-            result: 'now thats what smashing a keyboard looks like'
+            result: '?estranho¿'
     - no:
       id: 2
-      text: 'NO'
-      result: 'someone like you, more like someone unlike you'
+      text: 'NÃO'
+      result: 'ah vai ti cata'
       result_image: 'image-2.jpg'
 
-win_text: 'fuck you!'
+win_text: ':)'
 win_image: 'image-3.png'
