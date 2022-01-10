@@ -1,0 +1,39 @@
+prompt:
+  text: 'what do you say, you get money, I get drugs'
+  image: 'image-1.jpg'
+  choices:
+    - yes:
+      id: 1
+      text: 'YES'
+      result: 'Hell yeah'
+      next:
+        text: 'so how much 100 of these will get me'
+        choices:
+          - 100:
+            id: 1
+            text: '100'
+            result: 'no deal, I value my money'
+          - 420:
+            id: 2
+            text: '420'
+            result: 'now thats what im talking about'
+          - 00:
+            id: 3
+            text: '00'
+            result: 'noooo'
+          - 99999:
+            id: 4
+            text: '99999'
+            result: 'economy: breaks'
+          - 3210931:
+            id: 5
+            text: '391091'
+            result: 'now thats what smashing a keyboard looks like'
+    - no:
+      id: 2
+      text: 'NO'
+      result: 'someone like you, more like someone unlike you'
+      result_image: 'image-2.jpg'
+
+win_text: 'fuck you!'
+win_image: 'image-3.png'

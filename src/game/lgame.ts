@@ -1,5 +1,6 @@
 import { load } from "js-yaml";
 import { promises as fs } from "fs";
+import { relative } from "node:path/posix";
 
 interface GameData {
     prompt: Prompt
@@ -7,7 +8,11 @@ interface GameData {
 
 interface Prompt {
     text: string
-    choices: Choice
+    choices: ChoiceMap
+}
+
+interface ChoiceMap {
+    [key: string]: Choice
 }
 
 interface Choice {
@@ -17,21 +22,27 @@ interface Choice {
 }
 
 class LGame {
-    baseFile: string;
     gameData!: GameData;
+    current: Prompt;
 
-    constructor(filepath: string) {
-        this.baseFile = filepath;
+    constructor(gameData: string) {
+        this.gameData = load(gameData) as GameData;
+        this.current = this.gameData.prompt;
+    }
 
-        try {
-            fs.readFile(filepath, "utf-8").then((file) => {
-                this.gameData = load(file) as GameData;
-            }).catch((err) => {
-                console.log(err);
-            });
-        } catch (err) {
-            console.log(err);
+    Prompt(): Prompt {
+        return this.current;
+    }
+
+    //will return null if there is no next prompt
+    Choose(choice: string): Prompt|null {
+        const next = this.current?.choices[`-${choice}`].next;
+        if (next === undefined) {
+            return null;
         }
+
+        this.current = next;
+        return this.current;
     }
 };
 

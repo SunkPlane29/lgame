@@ -1,0 +1,58 @@
+.game {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameImage {
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameImage img {
+    height: 100%;
+}
+
+.gameData {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgba(242, 236, 206, 0.8);
+}
+
+.displayText {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 12px;
+}
+
+.promptChoices {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.promptChoices button {
+    background-color: #F2CA52;
+    padding: 16px;
+    border: 1px solid #787878;
+    border-radius: 6px;
+    color: #787878;
+}
+
+.promptChoices button:hover {
+    background-color: #F2D750;
+}
