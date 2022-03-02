@@ -1,5 +1,5 @@
 prompt:
-  text: 'bah cpx, hoje tamo meio atoa, bot uma pet no garra e não se acanhe'
+  text: 'option 1'
   image: 'image-1.jpg'
   choices:
     - yes:
@@ -7,7 +7,7 @@ prompt:
       text: 'SIM'
       result: 'é sobre isso'
       next:
-        text: 'quantos roche vamo meter hoje?'
+        text: 'option 2'
         choices:
           - 100:
             id: 1
@@ -15,7 +15,7 @@ prompt:
             result: 'mas ta meio pouco né'
           - 420:
             id: 2
-            text: '420'
+            text: '12'
             result: 'parece razoável né, tem 5 então 1/84 (não sou muito bom de matemática)'
           - 00:
             id: 3
@@ -23,16 +23,16 @@ prompt:
             result: 'se eu dividir 5/00 meu neuronio cpx queima'
           - 99999:
             id: 4
-            text: '99999'
+            text: '3'
             result: 'é sobre isso'
           - 3210931:
             id: 5
-            text: '391091'
+            text: '4141'
             result: '?estranho¿'
     - no:
       id: 2
-      text: 'NÃO'
-      result: 'ah vai ti cata'
+      text: 'option 2'
+      result: '312312'
       result_image: 'image-2.jpg'
 
 win_text: ':)'
