@@ -1,3 +1,9 @@
+# LGame
+
+This is a simple game made with react and typescript that allows someone to create a visual novel using a simple configuration file.
+The game is based on prompts and choices. In the root level of the game there is a prompt, a win text and a win image. Inside a prompt there is a prompt text, an image, and choices. Each choice will have a text, an id that has to be an unique number, a result text (like a response), a result image to match the result text and an optional next prompt.
+This game was made as a one day project to make a react website that can be easily customizable. Like you can have a prompt with multiple choices and the website design remains almost the same.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -38,9 +44,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
